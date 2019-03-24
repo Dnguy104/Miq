@@ -7,7 +7,7 @@ type Props = {};
 var data = [
     {
       name: "test",
-      {
+      set: {
         key: "asdfgfdsgfdsh",
         key1: "asdfgfdsgfdsh",
         key2: "asdfgfdsgfdsh",
@@ -18,7 +18,7 @@ var data = [
     },
     {
       name: "test",
-      {
+      set: {
         key: "asdfgfdsgfdsh",
         key1: "asdfgfdsgfdsh",
         key2: "asdfgfdsgfdsh",
@@ -29,7 +29,7 @@ var data = [
     },
     {
       name: "test",
-      {
+      set: {
         key: "asdfgfdsgfdsh",
         key1: "asdfgfdsgfdsh",
         key2: "asdfgfdsgfdsh",
@@ -40,7 +40,7 @@ var data = [
     },
     {
       name: "test",
-      {
+      set: {
         key: "asdfgfdsgfdsh",
         key1: "asdfgfdsgfdsh",
         key2: "asdfgfdsgfdsh",
