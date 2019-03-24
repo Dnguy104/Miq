@@ -2,7 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <<<<<<< HEAD
     <title>Miq</title>
+    =======
+    <title>Hello Electron React!</title>
+    >>>>>>> 3e05f77a2daebd0c99c3577085bb363aa5c69932
     <script>
       (function() {
         if (!process.env.HOT) {
@@ -17,30 +21,47 @@
   </head>
   <body>
     <div id="root"></div>
+    <<<<<<< HEAD
     <script>
-      {
-        const scripts = [];
+            {
+      =======
+          <!-- <script id="widget" type="text/javascript" async="" src="https://widget.uservoice.com/urstDguk2K0aOkLlEfWZzw.js">
+    </script>
+    -->
+    <script>
+            {
+              // var uv=document.createElement('script');
+              // uv.id='widget'
+              // uv.type='text/javascript';
+              // uv.async=true;
+              // uv.src='https://widget.uservoice.com/urstDguk2K0aOkLlEfWZzw.js';
+              // // document.body.appendChild(uv);
+              // var s=document.getElementsByTagName('script')[0];
+              // s.parentNode.insertBefore(uv,s);
 
-        // Dynamically insert the DLL script in development env in the
-        // renderer process
-        if (process.env.NODE_ENV === 'development') {
-          scripts.push('../dll/renderer.dev.dll.js');
-        }
+      >>>>>>> 3e05f77a2daebd0c99c3577085bb363aa5c69932
+              const scripts = [];
 
-        // Dynamically insert the bundled app script in the renderer process
-        const port = process.env.PORT || 1212;
-        scripts.push(
-          process.env.HOT
-            ? 'http://localhost:' + port + '/dist/renderer.dev.js'
-            : './dist/renderer.prod.js'
-        );
+              // Dynamically insert the DLL script in development env in the
+              // renderer process
+              if (process.env.NODE_ENV === 'development') {
+                scripts.push('../dll/renderer.dev.dll.js');
+              }
 
-        document.write(
-          scripts
-            .map(script => `<script defer src="${script}"><\/script>`)
-            .join('')
-        );
-      }
+              // Dynamically insert the bundled app script in the renderer process
+              const port = process.env.PORT || 1212;
+              scripts.push(
+                process.env.HOT
+                  ? 'http://localhost:' + port + '/dist/renderer.dev.js'
+                  : './dist/renderer.prod.js'
+              );
+
+              document.write(
+                scripts
+                  .map(script => `<script defer src="${script}"><\/script>`)
+                  .join('')
+              );
+            }
     </script>
   </body>
 </html>
