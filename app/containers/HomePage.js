@@ -4,7 +4,7 @@ import Sidebar from '../components/Sidebar';
 
 type Props = {};
 
-  [
+var data = [
     {
       name: "test",
       {
